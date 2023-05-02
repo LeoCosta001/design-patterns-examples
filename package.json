@@ -1,0 +1,19 @@
+{
+  "name": "design-patterns-examples",
+  "version": "1.0.0",
+  "description": "Exemplos práticos de Design Patterns com TypeScript",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "build": "shx rm -rf ./dist && tsc && shx mv ./dist/temp/*/* ./dist/examples && shx rm -rf ./dist/temp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "shx": "^0.3.4",
+    "typescript": "^5.0.4"
+  }
+}
