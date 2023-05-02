@@ -7,12 +7,14 @@
     "example": "examples"
   },
   "scripts": {
-    "build": "shx rm -rf ./dist && tsc && shx mv ./dist/temp/*/* ./dist/examples && shx rm -rf ./dist/temp"
+    "build": "shx rm -rf ./dist && tsc && shx mv ./dist/temp/**/*.js ./dist/examples && shx rm -rf ./dist/temp",
+    "format": "prettier --write \"./examples/**/*.ts\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "prettier": "^2.8.8",
     "shx": "^0.3.4",
     "typescript": "^5.0.4"
   }
