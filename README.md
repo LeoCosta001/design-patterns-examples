@@ -21,6 +21,15 @@ Ao longo do tempo, pretendo adicionar mais exemplos e documentação para compar
    Isto irá criar um diretório chamado `dist/example` no diretório rais contendo todos os arquivos TypeScript compilados.
 5. Rode o código de um Design Pattern especifico utilizando o comando `node dist/example/NOME_DO_PATTERN.js`, por exemplo: `node dist/example/singleton.js`.
 
+### Formatação e verificação de qualidade do código
+
+Este projeto utiliza ESLint e Prettier para garantir que o código esteja formatado de maneira consistente e siga as boas práticas de codificação. Você pode usar os seguintes comandos para formatar e verificar a qualidade do código:
+
+- `npm run format`: Formata o código usando o Prettier.
+- `npm run lint`: Verifica a qualidade do código usando o ESLint.
+
+Lembre-se de executar esses comandos antes de enviar suas alterações para o repositório para garantir que o código esteja formatado corretamente e siga as boas práticas de codificação.
+
 ## Observações
 
 - As nomenclaturas que tiverem a palavra "My" significa que é um nome genérico e que pode ser usado qualquer outro, mas os que não tiverem significa que o ideal é que eles tenham realmente aquela nomenclaturas (válido para classes, variáveis, interfaces, etc).
