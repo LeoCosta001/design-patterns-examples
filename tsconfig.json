@@ -7,7 +7,8 @@
     "forceConsistentCasingInFileNames": true,
     "rootDir": "./examples",
     "outDir": "./dist/temp",
-    "baseUrl": "examples"
+    "baseUrl": "examples",
+    "isolatedModules": true
   },
   "include": ["examples"],
   "exclude": ["node_modules"]
