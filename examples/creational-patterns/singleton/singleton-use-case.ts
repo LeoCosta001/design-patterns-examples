@@ -54,6 +54,10 @@ class Configuration {
   }
 }
 
+/***********
+ * CLIENTE *
+ ***********/
+
 // Exemplo de uso da classe Configuration e do padrão Singleton.
 const config = Configuration.getInstance();
 
@@ -68,3 +72,5 @@ console.log('Idioma atualizado:', config.language); // Saída: "Idioma atualizad
 console.log('Volume atual:', config.volume); // Saída: "Volume atual: 50"
 config.volume = 75;
 console.log('Volume atualizado:', config.volume); // Saída: "Volume atualizado: 75"
+
+export {};

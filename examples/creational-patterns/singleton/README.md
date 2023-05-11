@@ -33,3 +33,18 @@ Imagine que você está criando um sistema de configurações para um aplicativo
 ### Solução
 
 Utilizando o padrão Singleton, você garante que haja apenas uma instância do objeto de configurações no aplicativo. Isso permite que todas as partes do aplicativo acessem e modifiquem as configurações por meio de um único ponto de acesso global.
+
+## Estrutura
+
+![Singleton Method Structure](https://imgur.com/2UCFJR7.png)
+
+1. **Singleton:** É a classe responsável por garantir a existência de uma única instância de uma determinada classe em toda a aplicação.
+   **No "Caso de uso":** É a classe Configuration.
+   Esta classe é constituída principalmente por:
+   - Uma propriedade estática privada (geralmente chamada de _instance) criada para armazenar a instância a qual você queira que seja única em toda a sua aplicação, podendo ser a instância da própria classe Singleton ou qualquer outra.
+     **No "Caso de uso":** É a propriedade estática privada _intance dentro da classe Configuration.
+   - Um construtor privado para garantir que novas instâncias da classe Singleton não possam ser criadas diretamente fora da classe.
+     **No "Caso de uso":** É o construtor constructor() dentro da classe Configuration.
+   - Um método estático público responsável por retornar a instância única que está armazenada na propriedade estática privada _instance da classe Singleton.
+     **OBS:** Se a instância ainda não tiver sido criada este método irá criá-la e armazená-la na propriedade estática privada_instance (para futuras consultas) e então retorná-la.
+     **No "Caso de uso":** É o método getInstance() dentro da classe Configuration.

@@ -32,6 +32,4 @@ Lembre-se de executar esses comandos antes de enviar suas alterações para o re
 
 ## Observações
 
-- As nomenclaturas que tiverem a palavra "My" significa que é um nome genérico e que pode ser usado qualquer outro, mas os que não tiverem significa que o ideal é que eles tenham realmente aquela nomenclaturas (válido para classes, variáveis, interfaces, etc).
-  **Exemplo:** `class MySingleton {...}`.
 - Os arquivos `...use-case.ts` são soluções para os problemas descritos na parte de "Caso de uso" encontrado nos arquivos `README.md` de cada Design Patterns.
