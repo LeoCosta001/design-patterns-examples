@@ -44,10 +44,10 @@ O padrão Factory Method pode ser a solução. Você cria uma classe abstrata "F
 ![Factory Method Structure](https://imgur.com/xbIGUk6.png)
 
 1. **Product:** É uma interface ou classe abstrata que define os métodos que todos os produtos devem implementar.
-   **No "Caso de uso":** No exemplo de móveis, é a interface Furniture.
+   - **No "Caso de uso":** No exemplo de móveis, é a interface Furniture.
 2. **ConcreteProduct:** São as classes concretas que implementam a interface Product.
-   **No "Caso de uso":** São as classes Chair, Table e Sofa.
+   - **No "Caso de uso":** São as classes Chair, Table e Sofa.
 3. **Creator:** É uma interface ou classe abstrata que declara o método de fábrica. Este método retorna um objeto ConcreteProduct (que implementaram a interface Product).
-   **No "Caso de uso":** É a classe abstrata FurnitureFactory.
+   - **No "Caso de uso":** É a classe abstrata FurnitureFactory.
 4. **ConcreteCreator:** São as classes concretas que implementam o método de fábrica declarado em Creator. Cada ConcreteCreator retorna um objeto ConcreteProduct específico.
-   **No "Caso de uso":** São as classes ChairFactory, TableFactory e SofaFactory.
+   - **No "Caso de uso":** São as classes ChairFactory, TableFactory e SofaFactory.
