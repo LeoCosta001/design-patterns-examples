@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Este é o meu repositório pessoal de exemplos de Design Patterns utilizando TypeScript. Aqui eu documentei minha jornada de aprendizado, enquanto explorava padrões de design populares e aprendia como aplicá-los em projetos desenvolvidos com TypeScript.
+Este é o meu repositório pessoal de exemplos de Design Patterns (Padrões de Projeto) utilizando TypeScript. Aqui eu documentei minha jornada de aprendizado, enquanto explorava padrões de design populares e aprendia como aplicá-los em projetos desenvolvidos com TypeScript.
 
 Se você está começando agora a estudar sobre Design Patterns, ou está buscando soluções reutilizáveis para problemas comuns em seus projetos, este repositório pode ser uma fonte útil de referência. Os exemplos aqui apresentados são simples e fáceis de entender, e cada um vem acompanhado de uma breve explicação de como e quando utilizar o padrão em questão.
 
@@ -34,3 +34,4 @@ Lembre-se de executar esses comandos antes de enviar suas alterações para o re
 
 - As nomenclaturas que tiverem a palavra "My" significa que é um nome genérico e que pode ser usado qualquer outro, mas os que não tiverem significa que o ideal é que eles tenham realmente aquela nomenclaturas (válido para classes, variáveis, interfaces, etc).
   **Exemplo:** `class MySingleton {...}`.
+- Os arquivos `...use-case.ts` são soluções para os problemas descritos na parte de "Caso de uso" encontrado nos arquivos `README.md` de cada Design Patterns.
