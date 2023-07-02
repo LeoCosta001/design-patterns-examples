@@ -6,19 +6,19 @@ interface Furniture {
 // (ConcreteProduct) Para cada tipo de mobilia é definido uma classe que implementam a interface Furniture.
 class Chair implements Furniture {
   use(): void {
-    console.log('Sitting on a chair...');
+    console.log('Sentando na cadeira...');
   }
 }
 
 class Table implements Furniture {
   use(): void {
-    console.log('Putting something on the table...');
+    console.log('Colocando alguma coisa na mesa...');
   }
 }
 
 class Sofa implements Furniture {
   use(): void {
-    console.log('Lying on the sofa...');
+    console.log('Sentando no sofá...');
   }
 }
 
@@ -47,9 +47,9 @@ class SofaFactory extends FurnitureFactory {
   }
 }
 
-/***********
- * CLIENTE *
- ***********/
+/****************
+ * CLIENTE CODE *
+ ****************/
 
 // O código do cliente recebe um objeto FurnitureFactory e usa-o para criar e usar um novo objeto Furniture.
 function clientCode(furnitureFactory: FurnitureFactory): void {
@@ -58,8 +58,8 @@ function clientCode(furnitureFactory: FurnitureFactory): void {
 }
 
 // O código do cliente pode criar diferentes tipos de móveis, dependendo da fábrica que ele usa.
-clientCode(new ChairFactory()); // Saída: "Sitting on a chair..."
-clientCode(new TableFactory()); // Saída: "Putting something on the table..."
-clientCode(new SofaFactory()); // Saída: "Lying on the sofa..."
+clientCode(new ChairFactory()); // Saída: "Sentando na cadeira..."
+clientCode(new TableFactory()); // Saída: "Colocando alguma coisa na mesa..."
+clientCode(new SofaFactory()); // Saída: "Sentando no sofá..."
 
 export {};

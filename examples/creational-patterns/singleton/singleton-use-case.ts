@@ -54,9 +54,9 @@ class Configuration {
   }
 }
 
-/***********
- * CLIENTE *
- ***********/
+/****************
+ * CLIENTE CODE *
+ ****************/
 
 // Exemplo de uso da classe Configuration e do padrão Singleton.
 const config = Configuration.getInstance();

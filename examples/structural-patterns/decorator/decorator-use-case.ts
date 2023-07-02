@@ -11,7 +11,7 @@ class SimpleCoffee implements Coffee {
     }
 
     description(): string {
-        return 'Simple coffee';
+        return 'Café simples';
     }
 }
 
@@ -34,7 +34,7 @@ class MilkDecorator extends CoffeeDecorator {
     }
 
     description(): string {
-        return this.coffee.description() + ', with milk';
+        return this.coffee.description() + ', com leite';
     }
 }
 
@@ -45,7 +45,7 @@ class ChocolateDecorator extends CoffeeDecorator {
     }
 
     description(): string {
-        return this.coffee.description() + ', with chocolate';
+        return this.coffee.description() + ', com chocolate';
     }
 }
 
@@ -56,33 +56,33 @@ class WhippedCreamDecorator extends CoffeeDecorator {
     }
 
     description(): string {
-        return this.coffee.description() + ', with whipped cream';
+        return this.coffee.description() + ', com chantilly';
     }
 }
 
-/***********
- * CLIENTE *
- ***********/
+/****************
+ * CLIENTE CODE *
+ ****************/
 
 // O código do cliente pode criar diferentes tipos de cafés, combinando várias opções.
 function clientCode(coffee: Coffee): void {
-    console.log(`${coffee.description()} costs $${coffee.cost()}`);
+    console.log(`${coffee.description()} custa $${coffee.cost()}`);
 }
 
 // Criando um café simples
 const simpleCoffee = new SimpleCoffee();
-clientCode(simpleCoffee); // Saída: "Simple coffee costs $2"
+clientCode(simpleCoffee); // Saída: "Café simples custa $2"
 
 // Adicionando leite
 const coffeeWithMilk = new MilkDecorator(simpleCoffee);
-clientCode(coffeeWithMilk); // Saída: "Simple coffee, with milk costs $3"
+clientCode(coffeeWithMilk); // Saída: "Café simples, com leite custa $3"
 
 // Adicionando leite e chocolate
 const coffeeWithMilkAndChocolate = new ChocolateDecorator(coffeeWithMilk);
-clientCode(coffeeWithMilkAndChocolate); // Saída: "Simple coffee, with milk, with chocolate costs $4.5"
+clientCode(coffeeWithMilkAndChocolate); // Saída: "Café simples, com leite, com chocolate custa $4.5"
 
 // Adicionando leite, chocolate e chantilly
 const coffeeWithMilkChocolateAndWhippedCream = new WhippedCreamDecorator(coffeeWithMilkAndChocolate);
-clientCode(coffeeWithMilkChocolateAndWhippedCream); // Saída: "Simple coffee, with milk, with chocolate, with whipped cream costs $5.3"
+clientCode(coffeeWithMilkChocolateAndWhippedCream); // Saída: "Café simples, com leite, com chocolate, com chantilly custa $5.3"
 
 export {};

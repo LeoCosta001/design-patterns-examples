@@ -23,9 +23,9 @@ class Singleton {
   }
 }
 
-/***********
- * CLIENTE *
- ***********/
+/****************
+ * CLIENTE CODE *
+ ****************/
 
 // Testando o Singleton
 const singleton1 = Singleton.getInstance();

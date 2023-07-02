@@ -43,24 +43,24 @@ class ConcreteCreator2 extends Creator {
   }
 }
 
-/***********
- * CLIENTE *
- ***********/
+/****************
+ * CLIENTE CODE *
+ ****************/
 
 // O código do cliente trabalha com uma instância de um criador concreto, embora através de sua interface base. 
 // Contanto que o cliente continue trabalhando com o criador por meio da interface base, você pode passar qualquer 
 // subclasse do criador.
 function clientCode(creator: Creator): void {
-  console.log('Client: I\'m not aware of the creator\'s class, but it still works.');
+  console.log('Client: Não estou ciente da classe vinda por parâmetro, mas ainda funciona.');
   console.log(creator.someOperation());
 }
 
 // Aplicação escolhe o tipo de criador dependendo da configuração ou do ambiente.
-console.log('App: Launched with the ConcreteCreator1.');
-clientCode(new ConcreteCreator1());
+console.log('App: Lançado com a classe ConcreteCreator1.');
+clientCode(new ConcreteCreator1()); // Saída: "Creator: O mesmo código do criador acabou de trabalhar com {Resultado do ConcreteProduct1}"
 console.log('');
 
-console.log('App: Launched with the ConcreteCreator2.');
-clientCode(new ConcreteCreator2());
+console.log('App: Lançado com a classe ConcreteCreator2.');
+clientCode(new ConcreteCreator2()); // Saída: "Creator: O mesmo código do criador acabou de trabalhar com {Resultado do ConcreteProduct2}"
 
 export {};

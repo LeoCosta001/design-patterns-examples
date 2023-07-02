@@ -51,14 +51,13 @@ function clientCode(component: Component): void {
 // Dessa forma, o código do cliente pode ser escrito de maneira agnóstica à maneira
 // como os componentes são compostos.
 const simple = new ConcreteComponent();
-console.log('Client: I\'ve got a simple component:');
+console.log('Client: Eu vou ter um componente simples:');
 clientCode(simple); // Saída: "RESULT: ConcreteComponent"
-
 console.log('');
 
 const decorator1 = new ConcreteDecoratorA(simple);
 const decorator2 = new ConcreteDecoratorB(decorator1);
-console.log('Client: Now I\'ve got a decorated component:');
+console.log('Client: Agora eu vou ter um componente decorado:');
 clientCode(decorator2); // Saída: "RESULT: ConcreteDecoratorB(ConcreteDecoratorA(ConcreteComponent))"
 
 export {};
