@@ -41,7 +41,7 @@ O padrão Factory Method pode ser a solução. Você cria uma classe abstrata "F
 
 ## Estrutura
 
-![Factory Method Structure](https://imgur.com/xbIGUk6.png)
+![Factory Method Diagram](https://imgur.com/hFfYbcv.png)
 
 1. **Product:** É uma interface ou classe abstrata que define os métodos que todos os produtos devem implementar.
    - **No "Caso de uso":** No exemplo de móveis, é a interface Furniture.

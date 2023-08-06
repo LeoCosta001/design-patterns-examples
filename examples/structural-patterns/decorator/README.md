@@ -42,7 +42,7 @@ O padrão Decorator oferece uma solução elegante para este problema. Você pod
 
 ## Estrutura
 
-![Decorator Diagram](https://refactoring.guru/images/patterns/diagrams/decorator/structure.png)
+![Decorator Diagram](https://imgur.com/mOoaguQ.png)
 
 Um Decorator típico incluirá a seguinte estrutura:
 

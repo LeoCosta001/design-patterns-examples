@@ -36,7 +36,7 @@ Utilizando o padrão Singleton, você garante que haja apenas uma instância do 
 
 ## Estrutura
 
-![Singleton Method Structure](https://imgur.com/2UCFJR7.png)
+![Singleton Diagram](https://imgur.com/ZT7DD7O.png)
 
 1. **Singleton:** É a classe responsável por garantir a existência de uma única instância de uma determinada classe em toda a aplicação.
    - **No "Caso de uso":** É a classe Configuration.
