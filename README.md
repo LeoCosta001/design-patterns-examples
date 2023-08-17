@@ -18,8 +18,8 @@ Ao longo do tempo, pretendo adicionar mais exemplos e documentação para compar
    2. Verifique se o TypeScript foi instalado corretamente executando o comando: `tsc --version`. (Se você receber a versão do TypeScript instalada, a instalação foi bem-sucedida).
 3. Rode o comando `npm install` neste repositório.
 4. Compile os arquivos TypeScript usando o comando: `npm run build`.
-   Isto irá criar um diretório chamado `dist/example` no diretório rais contendo todos os arquivos TypeScript compilados.
-5. Rode o código de um Design Pattern especifico utilizando o comando `node dist/example/NOME_DO_PATTERN.js`, por exemplo: `node dist/example/singleton.js`.
+   Isto irá criar um diretório chamado `dist/examples` no diretório rais contendo todos os arquivos TypeScript compilados.
+5. Rode o código de um Design Pattern especifico utilizando o comando `node dist/examples/NOME_DO_PATTERN.js`, por exemplo: `node dist/examples/singleton.js`.
 
 ### Formatação e verificação de qualidade do código
 
