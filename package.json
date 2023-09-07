@@ -9,7 +9,7 @@
   "scripts": {
     "build": "shx rm -rf ./dist && tsc && shx mkdir -p ./dist/examples && shx mv ./dist/temp/**/*.js ./dist/examples && shx rm -rf ./dist/temp",
     "format": "prettier --write \"./examples/**/*.ts\"",
-    "lint": "eslint './src/**/*.ts'"
+    "lint": "eslint './examples/**/*.ts'"
   },
   "keywords": [],
   "author": "",
