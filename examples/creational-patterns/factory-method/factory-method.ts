@@ -3,7 +3,7 @@ interface Product {
   operation(): string;
 }
 
-// A classe Creator declara o método de fábrica que deve retornar um objeto da classe Product. 
+// A classe Creator declara o método de fábrica que deve retornar um objeto da classe Product.
 // As subclasses do Creator geralmente fornecem a implementação desse método.
 abstract class Creator {
   public abstract factoryMethod(): Product;
@@ -47,11 +47,13 @@ class ConcreteCreator2 extends Creator {
  * CLIENTE CODE *
  ****************/
 
-// O código do cliente trabalha com uma instância de um criador concreto, embora através de sua interface base. 
-// Contanto que o cliente continue trabalhando com o criador por meio da interface base, você pode passar qualquer 
+// O código do cliente trabalha com uma instância de um criador concreto, embora através de sua interface base.
+// Contanto que o cliente continue trabalhando com o criador por meio da interface base, você pode passar qualquer
 // subclasse do criador.
 function clientCode(creator: Creator): void {
-  console.log('Client: Não estou ciente da classe vinda por parâmetro, mas ainda funciona.');
+  console.log(
+    'Client: Não estou ciente da classe vinda por parâmetro, mas ainda funciona.',
+  );
   console.log(creator.someOperation());
 }
 

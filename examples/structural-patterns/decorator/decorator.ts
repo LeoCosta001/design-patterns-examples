@@ -1,41 +1,41 @@
 // A interface Component define o comportamento para os objetos concretos.
 interface Component {
-    operation(): string;
+  operation(): string;
 }
 
 // A classe ConcreteComponent é uma implementação básica da interface Component.
 class ConcreteComponent implements Component {
-    operation(): string {
-        return 'ConcreteComponent';
-    }
+  operation(): string {
+    return 'ConcreteComponent';
+  }
 }
 
 // A classe BaseDecorator possui um campo para referenciar um objeto Component
 // e a implementação do comportamento é delegada para este objeto.
 abstract class BaseDecorator implements Component {
-    protected component: Component;
+  protected component: Component;
 
-    constructor(component: Component) {
-        this.component = component;
-    }
+  constructor(component: Component) {
+    this.component = component;
+  }
 
-    operation(): string {
-        return this.component.operation();
-    }
+  operation(): string {
+    return this.component.operation();
+  }
 }
 
 // ConcreteDecorators adicionam funcionalidades ao componente, podendo adicionar estado ou
 // sobrepor o comportamento do componente.
 class ConcreteDecoratorA extends BaseDecorator {
-    operation(): string {
-        return `ConcreteDecoratorA(${super.operation()})`;
-    }
+  operation(): string {
+    return `ConcreteDecoratorA(${super.operation()})`;
+  }
 }
 
 class ConcreteDecoratorB extends BaseDecorator {
-    operation(): string {
-        return `ConcreteDecoratorB(${super.operation()})`;
-    }
+  operation(): string {
+    return `ConcreteDecoratorB(${super.operation()})`;
+  }
 }
 
 /****************
@@ -45,7 +45,7 @@ class ConcreteDecoratorB extends BaseDecorator {
 // O código do cliente pode suportar tanto os componentes simples como os decorados,
 // usando a mesma interface de componentes.
 function clientCode(component: Component): void {
-    console.log(`RESULT: ${component.operation()}`);
+  console.log(`RESULT: ${component.operation()}`);
 }
 
 // Dessa forma, o código do cliente pode ser escrito de maneira agnóstica à maneira

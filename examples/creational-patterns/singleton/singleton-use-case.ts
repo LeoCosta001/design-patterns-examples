@@ -10,7 +10,6 @@ class Configuration {
 
   // Construtor privado para evitar a criação de instâncias fora desta classe.
   private constructor() {
-
     // Inicializa os atributos com valores padrão.
     this._theme = 'light';
     this._language = 'en';
