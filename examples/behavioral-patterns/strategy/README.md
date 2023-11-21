@@ -12,9 +12,9 @@ Este resultado é possível quando todos os algoritmos da mesma familia, apesar 
 
 ## Características
 
-* Permite a variação de partes do algoritmo em tempo de execução sem modificar o código que utiliza o algoritmo.
-* Encapsula comportamentos específicos em classes separadas, proporcionando a possibilidade de trocar esses comportamentos dinamicamente.
-* Segue o princípio da programação orientada a objetos que diz "prefira a composição à herança".
+- Permite a variação de partes do algoritmo em tempo de execução sem modificar o código que utiliza o algoritmo.
+- Encapsula comportamentos específicos em classes separadas, proporcionando a possibilidade de trocar esses comportamentos dinamicamente.
+- Segue o princípio da programação orientada a objetos que diz "prefira a composição à herança".
 
 ## Benefícios
 
