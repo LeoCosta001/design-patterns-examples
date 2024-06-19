@@ -1,7 +1,7 @@
 # Prototype
 
 ![Tipo](https://img.shields.io/badge/Tipo-Criacional-informational)
-![Facilidade de implementação](https://img.shields.io/badge/Facilidade%20de%20implementação-★★★☆☆-yellow)
+![Facilidade de implementação](https://img.shields.io/badge/Facilidade%20de%20implementação-★★★★★-brightgreen)
 
 ## Descrição
 
