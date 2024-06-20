@@ -34,9 +34,9 @@ class Context {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente trabalha com o Context e as estratégias concretas através da interface base (Strategy).
 // Isso permite a intercambialidade das estratégias em tempo de execução.

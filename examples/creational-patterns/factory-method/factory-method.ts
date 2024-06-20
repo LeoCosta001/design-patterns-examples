@@ -43,13 +43,12 @@ class ConcreteCreator2 extends Creator {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente trabalha com uma instância de um criador concreto, embora através de sua interface base.
-// Contanto que o cliente continue trabalhando com o criador por meio da interface base, você pode passar qualquer
-// subclasse do criador.
+// Contanto que o cliente continue trabalhando com o criador por meio da interface base, você pode passar qualquer subclasse do criador.
 function clientCode(creator: Creator): void {
   console.log(
     'Client: Não estou ciente da classe vinda por parâmetro, mas ainda funciona.',

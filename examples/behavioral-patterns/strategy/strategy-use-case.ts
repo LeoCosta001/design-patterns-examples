@@ -40,9 +40,9 @@ class RouteCalculator {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente pode configurar o RouteCalculator com diferentes estratégias de rota.
 function clientCode(

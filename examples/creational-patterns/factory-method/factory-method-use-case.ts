@@ -47,9 +47,9 @@ class SofaFactory extends FurnitureFactory {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente recebe um objeto FurnitureFactory e usa-o para criar e usar um novo objeto Furniture.
 function clientCode(furnitureFactory: FurnitureFactory): void {

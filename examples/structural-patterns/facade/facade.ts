@@ -43,9 +43,9 @@ class Facade {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 function clientCode(facade: Facade): void {
   console.log(facade.operation()); // Saída: "Facade: Execução completa!"

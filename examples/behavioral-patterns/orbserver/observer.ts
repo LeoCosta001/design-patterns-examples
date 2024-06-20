@@ -64,8 +64,7 @@ class ConcreteObserverB implements Observer {
  ***************/
 
 // O código do cliente pode trabalhar tanto com a classe do sujeito concreto quanto com as classes dos observadores concretos.
-// O cliente deve estar ciente de que ao alterar o estado do sujeito, ele também executará o método "notifyObservers()"
-// que, por sua vez, chamará o método "update()" de todos os observadores.
+// O cliente deve estar ciente de que ao alterar o estado do sujeito, ele também executará o método "notifyObservers()" que, por sua vez, chamará o método "update()" de todos os observadores.
 // O cliente deve estar ciente que o método "update()" de cada observador pode ter uma implementação diferente para cada observador.
 function clientCode(subject: Subject): void {
   console.log(

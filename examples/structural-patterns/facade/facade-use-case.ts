@@ -84,9 +84,9 @@ class HomeEntertainmentFacade {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente usa a fachada para interagir com o subsistema complexo
 function clientCode(facade: HomeEntertainmentFacade): void {

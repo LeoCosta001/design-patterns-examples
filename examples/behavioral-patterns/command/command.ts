@@ -63,9 +63,9 @@ class Invoker {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // OBS: O cliente geralmente cria uma classe para abstrair a lógica de negócios, que é usada para executar os processos descritos abaixo (para um exemplo prático analise a classe "Application" do arquivo command-use-case.ts)
 

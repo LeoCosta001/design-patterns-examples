@@ -69,9 +69,9 @@ class EditorInvoker {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente cria comandos concretos e os atribui ao invocador.
 class Application {

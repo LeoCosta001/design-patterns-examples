@@ -42,9 +42,9 @@ class ConcreteAggregate implements Aggregate<string> {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente trabalha com uma instância de um agregado concreto e seu iterador.
 function clientCode(aggregate: Aggregate<string>): void {

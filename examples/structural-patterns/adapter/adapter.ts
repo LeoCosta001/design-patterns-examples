@@ -24,9 +24,9 @@ class Adapter implements Target {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente suporta apenas classes que seguem a interface Target.
 function clientCode(target: Target): void {

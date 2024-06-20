@@ -165,9 +165,9 @@ class RadioPlaylist implements Playlist {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente recebe uma lista de reprodução e a percorre usando um iterador.
 function clientCode(playlist: Playlist): void {

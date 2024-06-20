@@ -10,8 +10,7 @@ class ConcreteComponent implements Component {
   }
 }
 
-// A classe BaseDecorator possui um campo para referenciar um objeto Component
-// e a implementação do comportamento é delegada para este objeto.
+// A classe BaseDecorator possui um campo para referenciar um objeto Component e a implementação do comportamento é delegada para este objeto.
 abstract class BaseDecorator implements Component {
   protected component: Component;
 
@@ -24,8 +23,7 @@ abstract class BaseDecorator implements Component {
   }
 }
 
-// ConcreteDecorators adicionam funcionalidades ao componente, podendo adicionar estado ou
-// sobrepor o comportamento do componente.
+// ConcreteDecorators adicionam funcionalidades ao componente, podendo adicionar estado ou sobrepor o comportamento do componente.
 class ConcreteDecoratorA extends BaseDecorator {
   operation(): string {
     return `ConcreteDecoratorA(${super.operation()})`;
@@ -42,14 +40,12 @@ class ConcreteDecoratorB extends BaseDecorator {
  * CLIENT CODE  *
  ****************/
 
-// O código do cliente pode suportar tanto os componentes simples como os decorados,
-// usando a mesma interface de componentes.
+// O código do cliente pode suportar tanto os componentes simples como os decorados, usando a mesma interface de componentes.
 function clientCode(component: Component): void {
   console.log(`RESULT: ${component.operation()}`);
 }
 
-// Dessa forma, o código do cliente pode ser escrito de maneira agnóstica à maneira
-// como os componentes são compostos.
+// Dessa forma, o código do cliente pode ser escrito de maneira agnóstica à maneira como os componentes são compostos.
 const simple = new ConcreteComponent();
 console.log('Client: Eu vou ter um componente simples:');
 clientCode(simple); // Saída: "RESULT: ConcreteComponent"

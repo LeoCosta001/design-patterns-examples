@@ -60,9 +60,9 @@ class WhippedCreamDecorator extends CoffeeDecorator {
   }
 }
 
-/****************
- * CLIENTE CODE *
- ****************/
+/***************
+ * CLIENT CODE *
+ ***************/
 
 // O código do cliente pode criar diferentes tipos de cafés, combinando várias opções.
 function clientCode(coffee: Coffee): void {
